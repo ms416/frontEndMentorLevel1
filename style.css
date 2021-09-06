@@ -1,0 +1,160 @@
+.background-box {
+  background-image: url("images/pattern-background-desktop.svg");
+  height: 100vh;
+  background-repeat: repeat-x;
+  background-color: #E0E8FF;
+}
+html * {
+  font-family: Red Hat Display;
+  margin: 0px;
+}
+
+.content-box {
+  width: 25%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.info-box {
+  height: 60%;
+  width: 100%;
+  background-color: white;
+  margin-top: -3px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.poster-image {
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.order-summary {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+}
+.desc-class {
+  padding-top: 10px;
+  font-size: 15px;
+  color: hsl(224, 23%, 55%);
+  padding-right: 55px;
+  padding-left: 55px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.order-box {
+  margin: auto;
+  text-align: center;
+  display: table;
+  height: 40px;
+  margin: auto;
+  width: 80%;
+}
+.order-desc {
+  vertical-align: middle;
+  display: table-cell;
+  background-color: hsl(225, 100%, 98%);
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.proceed-btn {
+  display: block;
+  margin: auto;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+}
+.proceed-btn:hover{
+  background-color: hsl(245deg 53% 60%);
+  cursor: grab;
+}
+.cancel-btn {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  font-size: 16px;
+  background-color: white;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+.cancel-btn:hover{
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+.annual-plan {
+  float: left;
+  padding-left: 16px;
+}
+.change-plan {
+  float: right;
+  margin-right: 20px;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-size: 13px;
+  font-weight: 700;
+  padding-top: 14px;
+}
+.change-plan:hover{
+  color: hsl(245deg 53% 60%);
+  cursor: grab;
+}
+.plan-price {
+  padding: 2px;
+  margin: 0px;
+  color: hsl(224, 23%, 55%);
+  padding: 2px;
+  margin: 0px;
+}
+.attribution {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 375px) {
+  .background-box{
+    background-image: none;
+    background-color: #D6E1FF;
+  }
+  .content-box {
+    width: 80%;
+  }
+  .order-box {
+    width: 90%;
+    margin: none;
+  }
+  .desc-class {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+    padding-bottom: 27px;
+  }
+  .annual-plan {
+    font-size: 14px;
+  }
+  .proceed-btn {
+    font-size: 16px;
+  }
+  .change-plan{
+    padding-top: 14px;
+  }
+}
